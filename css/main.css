@@ -42,6 +42,7 @@
 .date {
   font-size: 0.8734387282732116em;
   margin-bottom: 16px;
+  text-align: center;
 }
 .badge {
   border-bottom: 1px dashed #c0ec68;
@@ -97,6 +98,9 @@
   margin-right: 8px;
   margin-bottom: 2px;
 }
+.links {
+  margin-top: 16px;
+}
 body {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -116,6 +120,7 @@ body {
   background: #c0ec68;
 }
 h1 {
+  text-align: center;
   font-size: 1.500730351849em;
   font-weight: normal;
   margin-top: 0px;
@@ -235,6 +240,7 @@ nav a:hover {
   text-decoration: none;
   font-size: 32px;
   color: #c0ec68;
+  margin: 0 2px;
 }
 #main {
   width: 96%;
@@ -243,10 +249,6 @@ nav a:hover {
 }
 #page-error h1 {
   color: #7900a0;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
 }
 #page-error p {
   text-align: center;
@@ -260,14 +262,4 @@ nav a:hover {
 }
 #page-article h1 {
   font-size: 1.8384592124201549em;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
-}
-#page-article .date {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
 }
