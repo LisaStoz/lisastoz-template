@@ -30,6 +30,9 @@
 .icon-twitter:before {
   content: "\e601";
 }
+.icon-github:before {
+  content: "\e602";
+}
 .left {
   float: left;
 }
