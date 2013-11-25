@@ -55,21 +55,6 @@
 .link {
     .no-underline;
 }
-
-.switcher {
-    .centered;
-    display: block;
-    .inverted;
-    border: none;
-    .spacing-horizontal(padding, 2);
-    .font-identity;
-    
-    .size-up(2);
-    font-size: @calculated-size;
-    line-height: @calculated-size;
-    font-weight: bold;
-}
-
 .caret(@direction) {
     display: inline-block;
     width: 0;
@@ -101,6 +86,14 @@
     margin-bottom: 2px;
 }
 
+.caret (top) {
+    border-bottom: @border-presence;
+    border-left: @border-absence;
+    border-right: @border-absence;
+    .spacing(margin, right, 2, -1);
+    margin-bottom: 2px;
+}
+
 .caret-right {
     .caret(right);
 }
@@ -113,6 +106,14 @@
     .caret(bottom);
 }
 
+.caret-top {
+    .caret(top);
+}
+
 .links {
     .spacing(margin, top);
+}
+
+.closer {
+    .hide;
 }

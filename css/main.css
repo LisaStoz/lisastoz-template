@@ -54,22 +54,6 @@
 .link {
   text-decoration: none;
 }
-.switcher {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
-  display: block;
-  background: #c0ec68;
-  color: #ffffff;
-  border: none;
-  padding-left: 32px;
-  padding-right: 32px;
-  font-family: 'Megrim', cursive;
-  font-size: 1.1449em;
-  line-height: 1.1449em;
-  font-weight: bold;
-}
 .caret-right {
   display: inline-block;
   width: 0;
@@ -98,8 +82,21 @@
   margin-right: 8px;
   margin-bottom: 2px;
 }
+.caret-top {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-bottom: 5px solid #7900a0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  margin-right: 8px;
+  margin-bottom: 2px;
+}
 .links {
   margin-top: 16px;
+}
+.closer {
+  display: none;
 }
 body {
   padding-top: 0px;
@@ -262,4 +259,7 @@ nav a:hover {
 }
 #page-article h1 {
   font-size: 1.8384592124201549em;
+}
+.note-additional {
+  display: none;
 }
