@@ -10,8 +10,12 @@
     display: none;
 }
 
-.centered () {
+.text-centered {
     text-align: center;
+}
+
+.centered () {
+    .text-centered;
     margin-left: auto;
     margin-right: auto;
     float: none;
@@ -39,7 +43,7 @@
     .size-down(2);
     font-size: @calculated-size;
     .spacing(margin, bottom); 
-    text-align: center;
+    .text-centered;
 }
 
 @border-style-1: 1px dashed;
@@ -118,6 +122,25 @@
     .hide;
 }
 
-.dark {
+.heading () {
     color: @colour-violet;
+    .text-centered;    
+    font-weight: normal;            
+    
+    a {
+        text-decoration: none;
+    }
+}
+
+.image-container {
+    background: @colour-white;
+    .spacing(padding, bottom, 1);
+}
+
+.image-container.right {
+    .spacing(padding, left, 1);    
+}
+
+.image-container.left {
+    .spacing(padding, right, 1);    
 }

@@ -13,17 +13,28 @@ body {
     
 }
   
-h1 {
-    text-align: center;
+h1 {  
+    .heading;
     .size-up(6);
-    font-size: @calculated-size;
-    font-weight: normal;    
+    font-size: @calculated-size;    
     .spacing(margin, top, 0);    
     .spacing(margin, bottom, 4, -1);    
-    
-    a {
-        text-decoration: none;
-    }
+}
+
+h2 {    
+    .heading;
+    .size-up(4);
+    font-size: @calculated-size;      
+    .spacing(margin, top, 2);    
+    .spacing(margin, bottom, 2, -1);    
+}
+
+h3 {   
+    .heading;
+    .size-up(3);
+    font-size: @calculated-size;      
+    .spacing(margin, top, 2);    
+    .spacing(margin, bottom, 1, -1);    
 }
 
 a {
@@ -39,6 +50,17 @@ p, ul, ol {
     .spacing(margin, bottom, 2, -1);
 }
 
+ul {
+    list-style: url(../img/bullet.png);
+    .spacing(padding, left, 1);
+}
+
 img {
     border: none;
+}
+
+pre {
+    border-top: @border-style-1 @colour-black;
+    border-bottom: @border-style-1 @colour-black;
+    .spacing-vertical(padding, 1);
 }
