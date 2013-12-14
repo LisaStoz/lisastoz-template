@@ -8,7 +8,7 @@ Using:
     - Less
     - jQuery
     - IcoMoon's Free icon pack http://icomoon.io/#preview-free
-
+    - Google Fonts
 
 License 
 -------
