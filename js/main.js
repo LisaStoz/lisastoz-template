@@ -47,8 +47,8 @@
 
         });
 
-        if (window.location.hash > '') { 
-            openNote($('#'+window.location.hash));            
+        if (window.location.hash > '') {             
+            openNote($(window.location.hash));            
         }
 
     });
