@@ -37,7 +37,8 @@ module.exports = function(grunt) {
                 eqnull: true,
                 browser: true,
                 globals: {
-                  jQuery: true
+                  jQuery: true,
+                  console: true
                 }
             },
             gruntfile: {
