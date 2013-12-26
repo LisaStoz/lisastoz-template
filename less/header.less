@@ -1,26 +1,25 @@
 #header {
+    .body;           
+    .centered;    
+    .clear;
+    .spacing(padding, top);    
+    .spacing(padding, bottom, 5); 
     .size-up(22);
-    font-size: @calculated-size;
-    
-    .inverted;
-    .centered;
-    
-    .spacing-vertical(padding);
-    .spacing(margin, bottom);    
-    
-    a {
-        .font-identity;        
-        .inverted;
+    height: @calculated-size;
+        
+    .logo {
+        .size-up(22);
+        font-size: @calculated-size;
+        .font-identity;                
         .no-underline;
+        .left;
     }
+    
 }
 
 nav {
-    .body;
-    .centered;
-    
-    .spacing-vertical(padding, 2, -1);
-    .spacing(margin, bottom, 3);    
+    .right;        
+    .spacing(margin, top, 2.7);    
     
     ul {
         list-style: none;
@@ -31,7 +30,7 @@ nav {
             
             @media @mobile {
                 display: inline;
-                .spacing(margin, right);
+                .spacing(margin, right, 0.5);
                 .spacing(padding, bottom, 0);
                 
                 &:last-child {
@@ -42,18 +41,22 @@ nav {
         
     }
     
-    a {        
+    a {      
+        font-weight: 300;
         .no-underline;
         color: @colour-black;        
         .size-up(3);
         font-size: @calculated-size;
         
+        .spacing-horizontal(padding, 0.5);
+        .spacing-vertical(padding, -1);     
+        
         &.active, &.active:hover {
-            border-bottom: @border-style-2 @colour-green;
+            border-bottom: @border-style-2 @colour-violet;            
         }
 
         &:hover {
-            border-bottom: @border-style-1 @colour-green;
+            border-bottom: @border-style-1 @colour-violet;
         }
     }
     

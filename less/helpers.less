@@ -143,6 +143,23 @@
     .spacing(padding, right, 1);    
 }
 
+.nav-link () {
+    font-weight: 300;
+    .no-underline;
+    color: @colour-black;        
+    .size-up(3);
+    font-size: @calculated-size;
+    .spacing-horizontal(padding, 0.5);    
+    border: none;
+    text-decoration: none;
+}
+
+
 .credits {
     .spacing(padding, top);
+    a {
+        .nav-link;
+        border-bottom: @border-style-2 @colour-black;            
+    }
 }
+
