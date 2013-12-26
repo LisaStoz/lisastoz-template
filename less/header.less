@@ -4,22 +4,32 @@
     .clear;
     .spacing(padding, top);    
     .spacing(padding, bottom, 5); 
-    .size-up(22);
-    height: @calculated-size;
-        
+    
+    @media @tablet {
+        .size-up(22);
+        height: @calculated-size;
+    }
+            
     .logo {
         .size-up(22);
         font-size: @calculated-size;
         .font-identity;                
         .no-underline;
-        .left;
+        @media @tablet {
+            .left;
+        }        
     }
     
 }
 
-nav {
-    .right;        
-    .spacing(margin, top, 2.7);    
+nav {    
+        
+    .spacing(margin, top);    
+    
+    @media @tablet {
+        .spacing(margin, top, 2.7);    
+        .right;        
+    }
     
     ul {
         list-style: none;
